@@ -16,16 +16,16 @@ export const counterSlice = createSlice({
   reducers: {
     load: (state, action: PayloadAction<PokemonResponse[]>) => {
       state.list = action.payload;
-    },
-  },
+    }
+  }
 });
 
 export const { load } = counterSlice.actions;
 
 export const loadPokemonList = createAsyncThunk('pokemons/load', async (_, thunkApi) => {
   const response = (await getPokemonList()).results;
-  const pokemons = Promise.all(response.map(pokemon => get<PokemonResponse>(pokemon.url)));
-  thunkApi.dispatch(load(await pokemons));
+  const pokemons = await Promise.all(response.map(pokemon => get<PokemonResponse>(pokemon.url)));
+  thunkApi.dispatch(load(pokemons));
 });
 
 export const selectAllPokemons = (state: RootState) => state.pokemonsList.list;
