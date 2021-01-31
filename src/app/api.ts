@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-type PokemonListResponse = {
+export type PokemonListResponse = {
   count: number;
   next: string;
   previous: string;
@@ -10,6 +10,18 @@ type PokemonListResponse = {
   }[];
 }
 
-const get = async <T>(url: string) => (await axios.get<T>(`https://pokeapi.co/api/v2/${url}`)).data;
+export type PokemonResponse = {
+  id: number;
+  name: string;
+  types: {
+    slot: number;
+    type: {
+      name: string;
+      url: string;
+    }
+  }[]
+}
 
-export const getPokemonList = () => get<PokemonListResponse>('pokemon');
+const baseUrl = 'https://pokeapi.co/api/v2';
+export const get = async <T>(url: string) => (await axios.get<T>(url)).data;
+export const getPokemonList = () => get<PokemonListResponse>(`${baseUrl}/pokemon`);
