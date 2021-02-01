@@ -1,10 +1,13 @@
 import React from 'react';
-import './App.css';
+
+import { PokemonList } from './features/pokemon-list/PokemonList';
+
 
 function App() {
-  return (
-    <h1>Pokedex</h1>
-  );
+  return <>
+    <h1>Pokédex</h1>
+    <PokemonList />
+  </>;
 }
 
 export default App;
