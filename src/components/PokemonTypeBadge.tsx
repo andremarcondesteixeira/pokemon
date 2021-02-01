@@ -1,14 +1,17 @@
 import React from 'react';
 
 import './PokemonTypeBadge.css';
+import { getTypeIcon } from './PokemonTypeIcons';
 
 export function PokemonTypeBadge(props: {
   typeName: string;
-  icon: JSX.Element;
 }) {
   return (
     <div
       className={`pokemon-type-badge background-color-${props.typeName.toLowerCase()}`}
-    >{props.icon}{props.typeName}</div>
+    >
+      {getTypeIcon(props.typeName)}
+      {props.typeName}
+    </div>
   );
 };

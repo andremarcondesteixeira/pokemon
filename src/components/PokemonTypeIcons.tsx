@@ -133,3 +133,11 @@ export const PokemonTypeIcons = {
     );
   }
 }
+
+export function getTypeIcon(typeName: string, color = "#FFFFFF"): JSX.Element {
+  if (PokemonTypeIcons.hasOwnProperty(typeName)) {
+    return (PokemonTypeIcons as any)[typeName](color);
+  }
+
+  return PokemonTypeIcons.Normal(color);
+}
