@@ -1,1 +1,20 @@
-
+:root {
+  --background-color-normal-primary: '#9DA0AA';
+  --background-color-bug-primary: '#8CB330';
+  --background-color-dark-primary: '#58575F';
+  --background-color-dragon-primary: '#0F6AC0';
+  --background-color-electric-primary: '#EED535';
+  --background-color-fairy-primary: '#ED6EC7';
+  --background-color-fighting-primary: '#D04164';
+  --background-color-fire-primary: '#FD7D24';
+  --background-color-flying-primary: '#748FC9';
+  --background-color-ghost-primary: '#556AAE';
+  --background-color-grass-primary: '#62B957';
+  --background-color-ground-primary: '#DD7748';
+  --background-color-ice-primary: '#61CEC0';
+  --background-color-poison-primary: '#A552CC';
+  --background-color-psychic-primary: '#EA5D60';
+  --background-color-rock-primary: '#BAAB82';
+  --background-color-steel-primary: '#417D9A';
+  --background-color-water-primary: '#4A90DA';
+}
