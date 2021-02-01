@@ -25,3 +25,5 @@ yarn-error.log*
 .eslintcache
 
 .vscode
+
+__snapshots__
