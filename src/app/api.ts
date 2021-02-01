@@ -13,13 +13,15 @@ export type PokemonListResponse = {
 export type PokemonResponse = {
   id: number;
   name: string;
-  types: {
-    slot: number;
-    type: {
-      name: string;
-      url: string;
-    }
-  }[]
+  types: PokemonType[]
+}
+
+export type PokemonType = {
+  slot: number;
+  type: {
+    name: string;
+    url: string;
+  }
 }
 
 const baseUrl = 'https://pokeapi.co/api/v2';
