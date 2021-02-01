@@ -1,25 +1,149 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',	sans-serif;
   font-size: 16px;
+  padding: 1rem;
 }
 
-:root {
-  --background-color-normal-primary: '#9DA0AA';
-  --background-color-bug-primary: '#8CB330';
-  --background-color-dark-primary: '#58575F';
-  --background-color-dragon-primary: '#0F6AC0';
-  --background-color-electric-primary: '#EED535';
-  --background-color-fairy-primary: '#ED6EC7';
-  --background-color-fighting-primary: '#D04164';
-  --background-color-fire-primary: '#FD7D24';
-  --background-color-flying-primary: '#748FC9';
-  --background-color-ghost-primary: '#556AAE';
-  --background-color-grass-primary: '#62B957';
-  --background-color-ground-primary: '#DD7748';
-  --background-color-ice-primary: '#61CEC0';
-  --background-color-poison-primary: '#A552CC';
-  --background-color-psychic-primary: '#EA5D60';
-  --background-color-rock-primary: '#BAAB82';
-  --background-color-steel-primary: '#417D9A';
-  --background-color-water-primary: '#4A90DA';
+.background-color-normal-primary {
+  background-color: #9DA0AA;
+}
+
+.background-color-normal-secondary {
+  background-color: #B5B9C4;
+}
+
+.background-color-bug-primary {
+  background-color: #8CB330;
+}
+
+.background-color-bug-secondary {
+  background-color: #8BD674;
+}
+
+.background-color-dark-primary {
+  background-color: #58575F;
+}
+
+.background-color-dark-secondary {
+  background-color: #6F6E78;
+}
+
+.background-color-dragon-primary {
+  background-color: #0F6AC0;
+}
+
+.background-color-dragon-secondary {
+  background-color: #7383B9;
+}
+
+.background-color-electric-primary {
+  background-color: #EED535;
+}
+
+.background-color-electric-secondary {
+  background-color: #F2CB55;
+}
+
+.background-color-fairy-primary {
+  background-color: #ED6EC7;
+}
+
+.background-color-fairy-secondary {
+  background-color: #EBA8C3;
+}
+
+.background-color-fighting-primary {
+  background-color: #D04164;
+}
+
+.background-color-fighting-secondary {
+  background-color: #EB4971;
+}
+
+.background-color-fire-primary {
+  background-color: #FD7D24;
+}
+
+.background-color-fire-secondary {
+  background-color: #FFA756;
+}
+
+.background-color-flying-primary {
+  background-color: #748FC9;
+}
+
+.background-color-flying-secondary {
+  background-color: #83A2E3;
+}
+
+.background-color-ghost-primary {
+  background-color: #556AAE;
+}
+
+.background-color-ghost-secondary {
+  background-color: #8571BE;
+}
+
+.background-color-grass-primary {
+  background-color: #62B957;
+}
+
+.background-color-grass-secondary {
+  background-color: #8BBE8A;
+}
+
+.background-color-ground-primary {
+  background-color: #DD7748;
+}
+
+.background-color-ground-secondary {
+  background-color: #F78551;
+}
+
+.background-color-ice-primary {
+  background-color: #61CEC0;
+}
+
+.background-color-ice-secondary {
+  background-color: #91D8DF;
+}
+
+.background-color-poison-primary {
+  background-color: #A552CC;
+}
+
+.background-color-poison-secondary {
+  background-color: #9F6E97;
+}
+
+.background-color-psychic-primary {
+  background-color: #EA5D60;
+}
+
+.background-color-psychic-secondary {
+  background-color: #FF6568;
+}
+
+.background-color-rock-primary {
+  background-color: #BAAB82;
+}
+
+.background-color-rock-secondary {
+  background-color: #D4C294;
+}
+
+.background-color-steel-primary {
+  background-color: #417D9A;
+}
+
+.background-color-steel-secondary {
+  background-color: #4C91B3;
+}
+
+.background-color-water-primary {
+  background-color: #4A90DA;
+}
+
+.background-color-water-secondary {
+  background-color: #58ABF6;
 }
