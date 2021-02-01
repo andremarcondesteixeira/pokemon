@@ -1,0 +1,15 @@
+.pokemon-type-badge {
+  align-items: center;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-flex;
+  height: 1.5rem;
+  justify-content: space-between;
+  line-height: 1rem;
+  padding: 0.5rem;
+}
+
+.pokemon-type-badge svg {
+  height: 100%;
+  margin-right: 0.5rem;
+}
