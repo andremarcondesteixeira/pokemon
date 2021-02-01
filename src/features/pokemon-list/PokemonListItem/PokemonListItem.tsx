@@ -12,6 +12,7 @@ export function PokemonListItem(props: { pokemon: PokemonResponse }) {
       <div className={'id'}>#{props.pokemon.id.toString().padStart(3, '0')}</div>
       <h2>{props.pokemon.name}</h2>
       <ul>{types}</ul>
+      <img alt={props.pokemon.name} src={`https://pokeres.bastionbot.org/images/pokemon/${props.pokemon.id}.png`} />
     </li>
   );
 }

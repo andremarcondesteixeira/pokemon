@@ -1,9 +1,19 @@
 .pokemon-list-item {
   background-image: url(../../../assets/images/pattern.svg), url(../../../assets/images/pokeball.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: 8rem 0, right;
-  background-size: 10rem, 12rem;
+  background-position: 7.8rem 0, right;
+  background-size: 8rem, 14rem;
   border-radius: 10px;
+  display: grid;
+  grid-column-gap: 4rem;
+  grid-template-areas:
+    'id image'
+    'name image'
+    'types image';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(3, 1fr);
+  height: 8rem;
+  justify-content: center;
   padding: 2rem;
 }
 
@@ -14,19 +24,30 @@
 .pokemon-list-item > .id {
   color: rgba(23, 23, 27, 0.6);
   font-weight: 700;
+  font-size: 1.2rem;
+  grid-area: id;
 }
 
 .pokemon-list-item > h2 {
   color: #fff;
   font-size: 2.2rem;
+  grid-area: name;
   line-height: 2.2rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
   margin-top: 0.2rem;
   text-transform: capitalize;
 }
 
 .pokemon-list-item > ul {
+  grid-area: types;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.pokemon-list-item > img {
+  bottom: 4rem;
+  grid-area: image;
+  position: relative;
+  width: 13rem;
 }
