@@ -9,6 +9,10 @@
   padding: 0.5rem;
 }
 
+.pokemon-type-badge:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
 .pokemon-type-badge svg {
   height: 100%;
   margin-right: 0.5rem;
