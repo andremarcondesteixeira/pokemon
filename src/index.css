@@ -1,7 +1,16 @@
 body {
+  background-image: url(./assets/images/pokeball-body-bg.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #747476;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',	sans-serif;
   font-size: 16px;
-  padding: 1rem;
+  padding: 3rem;
+}
+
+h1 {
+  color: #17171B;
 }
 
 .background-color-normal-primary {
